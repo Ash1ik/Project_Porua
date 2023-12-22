@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Porua</string>
+    <string name="title_activity_login_with_email">Login_with_email</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="logo">Logo\n</string>
+    <string name="continue_with_gmail">Continue with Google</string>
+    <string name="continue_with_facebook">Continue with Facebook</string>
+    <string name="continue_with_email">Continue with Email</string>
+    <string name="already_a_member">Already a member?</string>
+    <string name="log_in">log in</string>
+    <string name="By_Continuing">By continuing, you agree to PORUA Terms of Service and acknowledge you’ve read our Privacy Policy. Notice all collection</string>
+    <string name="browse_without_log_in">Browse without Log in</string>
+    <string name="or">OR</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="no_account">No Account?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="are_you_a_business_get_started_here">Are you a business? Get started here!</string>
+    <string name="enter_email">Enter your E-mail</string>
+    <string name="enter_your_e_mail_address">Enter Your e-mail address</string>
+    <string name="create_your_account">Create your account</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password_with_6_or_more_characters">Password with 6 or more characters</string>
+    <string name="enter_your_birthdate">Enter your birthdate</string>
+    <string name="privacy_policy">To help keep PORUA safe, we now require your birthdate. Your birthdate also helps us provide more personalized recommendations and relevant ads. We do not share this information and it would not be visible on your profile.</string>
+    <string name="date">DD</string>
+    <string name="DD">Date</string>
+    <string name="mm">MM</string>
+    <string name="yy">YY</string>
+    <string name="done">Done</string>
+    <string name="my_profile">My Profile\n</string>
+    <string name="ashik_iqbal">Ashik Iqbal</string>
+    <string name="book_shelf">Book Shelf</string>
+    <string name="request_book">Request Book</string>
+    <string name="wish_list">Wish List\n</string>
+    <string name="review_amp_rating"><![CDATA[Review & Rating]]></string>
+    <string name="sign_out">Sign out</string>
+
+</resources>

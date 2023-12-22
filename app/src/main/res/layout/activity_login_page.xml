@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Login_page">
+
+
+    <Button
+        android:id="@+id/Facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="45dp"
+        android:backgroundTint="@color/Fb"
+        android:background="@drawable/continue_with_button"
+        android:drawableStart="@drawable/ic_facebook"
+        android:paddingStart="10dp"
+        android:text="@string/continue_with_facebook"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        tools:ignore="RtlSymmetry" />
+
+
+
+    <Button
+        android:id="@+id/Gmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:backgroundTint="@color/Google"
+        android:background="@drawable/continue_with_button"
+        android:drawableStart="@drawable/ic_google"
+        android:text="@string/continue_with_gmail"
+        android:paddingStart="10dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/or"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="334dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="12dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edittext_design"
+        android:drawableStart="@drawable/ic_email"
+        android:paddingStart="10dp"
+        android:hint="@string/email_address"
+        android:drawablePadding="8dp"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="334dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="21dp"
+        android:hint="@string/password"
+        android:drawablePadding="8dp"
+        android:background="@drawable/edittext_design"
+        android:drawableEnd="@drawable/password_icon"
+        android:paddingEnd="10dp"
+        android:drawableStart="@drawable/ic_lock"
+        android:paddingStart="10dp"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_your_password"
+        android:layout_marginStart="40dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="27dp"
+        android:textColor="@color/black"
+        />
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/Google"
+        android:background="@drawable/continue_with_button"
+        android:text="@string/log_in"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:text="@string/no_account"
+            android:textColor="@color/black"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#0F6AC8"
+            android:text="  Sign up"
+            />
+
+    </LinearLayout>
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:text="Are you in business?"
+            android:textColor="@color/black"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/get_started_here"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="7dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:text="  Get started here!"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/By_Continuing"
+        android:layout_marginTop="35dp"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_porua"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_porua_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Porua"
+        tools:targetApi="31"
+        >
+
+        
+
+
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".swap_page"
+            android:exported="false" />
+        <activity
+            android:name=".home_page"
+            android:exported="false" />
+        <activity
+            android:name=".signUp_Page"
+            android:exported="false" />
+        <activity
+            android:name=".Login_page"
+            android:exported="false" />
+        <activity
+            android:name=".startPage"
+            android:exported="false" />
+        <activity
+            android:name=".startActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

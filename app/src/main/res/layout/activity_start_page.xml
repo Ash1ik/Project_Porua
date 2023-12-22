@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".startActivity"
+    android:background="@color/white"
+    tools:ignore="ExtraText">
+
+
+    <ImageView
+        android:id="@+id/ImgPorua"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/white"
+        android:padding="1dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/porua"
+        app:strokeColor="@android:color/darker_gray"
+        app:strokeWidth="5dp"
+        android:contentDescription="@string/logo" />
+
+    <Button
+        android:id="@+id/Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:text="@string/continue_with_email"
+        android:background="@drawable/continue_with_button"
+        android:backgroundTint="@color/Email"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        />
+
+
+
+    <Button
+        android:id="@+id/Facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="45dp"
+        android:backgroundTint="@color/Fb"
+        android:background="@drawable/continue_with_button"
+        android:drawableStart="@drawable/ic_facebook"
+        android:text="@string/continue_with_facebook"
+        android:paddingStart="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        tools:ignore="RtlSymmetry" />
+
+
+
+    <Button
+        android:id="@+id/Gmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:backgroundTint="@color/Google"
+        android:background="@drawable/continue_with_button"
+        android:drawableStart="@drawable/ic_google"
+        android:paddingStart="10dp"
+        android:text="@string/continue_with_gmail"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+
+        tools:ignore="RtlSymmetry" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:text="@string/already_a_member"
+            android:textColor="@color/black"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="7dp"
+            android:layout_weight="1"
+            android:textColor="#0F6AC8"
+            android:text="  log in" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginRight="25dp"
+        android:gravity="center"
+        android:layout_marginLeft="25dp"
+        android:text="@string/By_Continuing"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:id="@+id/Browse"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/browse_without_log_in"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/Browse"/>
+
+
+
+
+</LinearLayout>
