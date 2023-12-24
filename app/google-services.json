@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "474228464744",
-    "project_id": "porua-9b201",
-    "storage_bucket": "porua-9b201.appspot.com"
+    "project_number": "834223981643",
+    "project_id": "project-porua",
+    "storage_bucket": "project-porua.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:474228464744:android:e13db73b42343b3f762fdd",
+        "mobilesdk_app_id": "1:834223981643:android:78d444c1d9fc2a4ffdf9ce",
         "android_client_info": {
           "package_name": "com.example.porua"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyB02Oow64tGRbHq57e6e2fLFMiK-zDqFBk"
+          "current_key": "AIzaSyCcJJdj81OxBSANF9uAmxiSTkTri9KHatI"
         }
       ],
       "services": {
