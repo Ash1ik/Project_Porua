@@ -40,5 +40,14 @@
     <string name="wish_list">Wish List\n</string>
     <string name="review_amp_rating"><![CDATA[Review & Rating]]></string>
     <string name="sign_out">Sign out</string>
+    <string name="science_fiction">Science Fiction</string>
+    <string name="most_search">Most Search</string>
+    <string name="Trending">Trending</string>
+    <string name="Explore">Explore\n</string>
+    <string name="novel">Novel</string>
+    <string name="poetry">Poetry</string>
+    <string name="thriller">Thriller</string>
+    <string name="Favorite_List">Favorite List</string>
+    <string name="what_are_you_looking_for">What are you looking for?</string>
 
 </resources>

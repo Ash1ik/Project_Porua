@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Search_bar"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:layout_width="318dp"
+        android:layout_height="48dp"
+        android:background="@drawable/continue_with_button"
+        android:hint="@string/what_are_you_looking_for"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/Google"
+        android:drawableEnd="@drawable/ic_search"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        tools:ignore="RtlSymmetry" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+</LinearLayout>

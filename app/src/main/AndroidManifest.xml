@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    >
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:allowBackup="true"
@@ -12,12 +11,28 @@
         android:roundIcon="@mipmap/ic_porua_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Porua"
-        tools:targetApi="31"
-        >
-
-        
-
-
+        tools:targetApi="31">
+        <activity
+            android:name=".Search_bar"
+            android:exported="false" />
+        <activity
+            android:name=".MenuBar"
+            android:exported="false" />
+        <activity
+            android:name=".Favorite_list"
+            android:exported="false" />
+        <activity
+            android:name=".Thriller"
+            android:exported="false" />
+        <activity
+            android:name=".Poetry"
+            android:exported="false" />
+        <activity
+            android:name=".Novel"
+            android:exported="false" />
+        <activity
+            android:name=".Science_Fiction"
+            android:exported="false" />
         <activity
             android:name=".Profile"
             android:exported="false" />

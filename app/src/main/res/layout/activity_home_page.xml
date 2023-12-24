@@ -29,6 +29,7 @@
             android:gravity="end"
             >
             <ImageView
+                android:id="@+id/search_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/ic_search"
@@ -109,28 +110,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_marginTop="20dp"
         >
 
         <Button
             android:layout_margin="10dp"
-            android:id="@+id/button11"
+            android:id="@+id/science_fiction_button"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:gravity="center"
             android:layout_weight="1"
             android:background="@drawable/cat_button_design"
-            android:text="Button" />
+            android:text="@string/science_fiction" />
 
         <Button
             android:layout_margin="10dp"
-            android:id="@+id/button12"
+            android:id="@+id/novel_button"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:backgroundTint="@color/Porua_Green"
             android:layout_weight="1"
             android:background="@drawable/cat_button_design"
             android:gravity="center"
-            android:text="Button" />
+            android:text="@string/novel" />
     </LinearLayout>
     <LinearLayout
         android:layout_marginBottom="60dp"
@@ -143,33 +144,31 @@
 
         <Button
             android:layout_margin="10dp"
-            android:id="@+id/button13"
+            android:id="@+id/poetry_button"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:backgroundTint="@color/Porua_Green"
             android:gravity="center"
             android:background="@drawable/cat_button_design"
             android:layout_weight="1"
-            android:text="Button" />
+            android:text="@string/poetry" />
 
         <Button
             android:layout_margin="10dp"
-            android:id="@+id/button14"
+            android:id="@+id/thriller_button"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:backgroundTint="@color/Porua_Green"
             android:layout_weight="1"
             android:background="@drawable/cat_button_design"
             android:gravity="center"
-            android:text="Button" />
+            android:text="@string/thriller" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="18dp"
         >
         <ImageButton
             android:layout_width="wrap_content"
@@ -178,6 +177,7 @@
             android:background="@drawable/icon_home"
             />
         <ImageButton
+            android:id="@+id/favorite"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="33dp"
@@ -198,7 +198,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="33dp"
-
             android:background="@drawable/icon_user"
             />
 
@@ -207,7 +206,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="33dp"
-
             android:background="@drawable/icon_menu"
             />
 
