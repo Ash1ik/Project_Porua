@@ -49,5 +49,7 @@
     <string name="thriller">Thriller</string>
     <string name="Favorite_List">Favorite List</string>
     <string name="what_are_you_looking_for">What are you looking for?</string>
+    <string name="history">History</string>
+    <string name="comics">Comics</string>
 
 </resources>
