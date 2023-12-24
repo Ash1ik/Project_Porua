@@ -37,6 +37,7 @@
             android:padding="10dp">
 
             <Button
+                android:id="@+id/science_fiction"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/continue_with_button"
