@@ -7,7 +7,8 @@
     android:orientation="vertical"
     tools:context=".startActivity"
     android:background="@color/white"
-    tools:ignore="ExtraText">
+    tools:ignore="ExtraText"
+    android:padding="10dp">
 
 
     <ImageView
