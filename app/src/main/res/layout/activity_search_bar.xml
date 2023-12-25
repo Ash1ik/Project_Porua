@@ -9,6 +9,7 @@
     android:orientation="vertical">
 
 <!--    hello i'm putki-->
+<!--     putki -->
 
     <EditText
         android:layout_width="318dp"
