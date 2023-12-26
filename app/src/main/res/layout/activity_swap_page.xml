@@ -38,5 +38,13 @@
 
     </LinearLayout>
 
+<<<<<<< HEAD
 
+=======
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hello" />
+>>>>>>> 91aa82a7d1ac688ddc9f26068cd8bf55f3df3b9d
 </LinearLayout>
