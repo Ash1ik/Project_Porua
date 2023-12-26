@@ -22,7 +22,7 @@
       android:textColor="@color/black"
       tools:ignore="Suspicious0dp" />
   <EditText
-      android:id="@+id/editTextTextEmailAddress"
+      android:id="@+id/Input_email"
       android:layout_width="334dp"
       android:layout_height="45dp"
       android:layout_gravity="center"
@@ -36,7 +36,7 @@
       android:drawablePadding="8dp"
       tools:ignore="RtlSymmetry" />
   <EditText
-      android:id="@+id/editTextTextPassword"
+      android:id="@+id/Input_pass"
       android:layout_width="334dp"
       android:layout_height="45dp"
       android:layout_gravity="center"
@@ -63,7 +63,7 @@
       />
 
   <EditText
-      android:id="@+id/editTextTextConfirmPassword"
+      android:id="@+id/Input_confirm_pass"
       android:layout_width="334dp"
       android:layout_height="45dp"
       android:layout_gravity="center"
@@ -79,7 +79,7 @@
       android:paddingStart="10dp" />
 
   <Button
-      android:id="@+id/nextto_birth"
+      android:id="@+id/next"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_marginTop="51dp"

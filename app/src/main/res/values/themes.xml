@@ -6,4 +6,12 @@
     </style>
 
     <style name="Theme.Porua" parent="Base.Theme.Porua" />
+
+    <style name="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+
 </resources>

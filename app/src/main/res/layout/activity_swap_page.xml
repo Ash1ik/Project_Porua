@@ -8,7 +8,35 @@
     android:orientation="vertical"
     >
 
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        tools:ignore="MissingConstraints">
 
-    
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="125dp"
+            android:background="@color/Google" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/ic_swap"
+
+            />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="125dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/thriller_01" />
+
+    </LinearLayout>
+
 
 </LinearLayout>
