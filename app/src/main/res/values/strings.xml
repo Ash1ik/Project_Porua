@@ -51,5 +51,8 @@
     <string name="what_are_you_looking_for">What are you looking for?</string>
     <string name="history">History</string>
     <string name="comics">Comics</string>
+    <string name="swap">Swap</string>
+    <string name="my_books">My Books</string>
+    <string name="recomended_books">Recomended Books</string>
 
 </resources>

@@ -185,6 +185,7 @@
             android:background="@drawable/icon_favorite"
             />
         <ImageButton
+            android:id="@+id/Swap"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

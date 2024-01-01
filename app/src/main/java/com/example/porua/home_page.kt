@@ -18,6 +18,7 @@ class home_page : AppCompatActivity() {
         thriller()
         favorite()
         search_icon()
+        swap()
     }
 
 
@@ -76,5 +77,17 @@ class home_page : AppCompatActivity() {
             intent = Intent(this,Search_bar::class.java)
             startActivity(intent)
         }
+    }
+
+    fun swap(){
+
+        val swap = findViewById<ImageButton>(R.id.Swap)
+
+        swap.setOnClickListener {
+            intent = Intent(this,swap_page::class.java)
+
+            startActivity(intent)
+        }
+
     }
 }

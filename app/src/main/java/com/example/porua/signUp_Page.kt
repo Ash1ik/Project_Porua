@@ -35,6 +35,8 @@ class signUp_Page : AppCompatActivity() {
                     firebaseAuth.createUserWithEmailAndPassword(email ,pass).addOnCompleteListener{
 
                         if(it.isSuccessful){
+                            binding.InputEmail.text.clear()
+                            binding.InputPass.text.clear()
                             Toast.makeText(this,"Account created successfully",Toast.LENGTH_SHORT).show()
                             intent = Intent(this,home_page::class.java)
                             startActivity(intent)

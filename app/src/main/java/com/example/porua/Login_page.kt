@@ -44,8 +44,11 @@ class Login_page : AppCompatActivity() {
                 firebaseAuth.signInWithEmailAndPassword(email , pass).addOnCompleteListener{
 
                     if (it.isSuccessful){
+                        binding.InputEmail.text.clear()
+                        binding.InputPass.text.clear()
                         intent = Intent(this, home_page::class.java)
                         startActivity(intent)
+
                     }
                     else{
                         Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()

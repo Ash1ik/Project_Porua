@@ -6,12 +6,15 @@ import android.os.Bundle
 import android.widget.Button
 
 class startPage : AppCompatActivity() {
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_start_page)
         continueWithmail()
     }
-    fun continueWithmail(){
+    private fun continueWithmail(){
         val  continueWithmail = findViewById<Button>(R.id.Email)
 
         continueWithmail.setOnClickListener{
