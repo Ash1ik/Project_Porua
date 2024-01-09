@@ -30,20 +30,23 @@
         android:gravity="center"
         >
 
-        <ImageView
+        <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/profileImage"
-            android:layout_width="128dp"
-            android:layout_height="132dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_gravity="center"
-            android:background="@drawable/round_button"
+            android:background="@color/Google"
+            app:shapeAppearanceOverlay="@style/circular"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
             tools:ignore="MissingConstraints" />
 
         <Button
-            android:id="@+id/addProfileImage"
+            android:id="@+id/profilrImageButton"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_gravity="bottom"

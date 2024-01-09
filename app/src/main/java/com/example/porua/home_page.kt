@@ -19,6 +19,7 @@ class home_page : AppCompatActivity() {
         favorite()
         search_icon()
         swap()
+        cart()
     }
 
 
@@ -89,5 +90,14 @@ class home_page : AppCompatActivity() {
             startActivity(intent)
         }
 
+    }
+
+    fun cart(){
+        val cart = findViewById<ImageView>(R.id.Cart)
+
+        cart.setOnClickListener {
+            intent = Intent(this,Cart::class.java)
+            startActivity(intent)
+        }
     }
 }

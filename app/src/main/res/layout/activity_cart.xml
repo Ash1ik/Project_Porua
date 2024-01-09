@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cart">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:src="@drawable/poetry_02"
+            />
+
+        <ImageButton
+            android:id="@+id/minus"
+            android:layout_width="15dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icon__minus"
+            android:layout_marginStart="50dp"
+            />
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginStart="50dp"
+            />
+        <ImageButton
+            android:id="@+id/plus"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icon__plus"
+            android:layout_marginStart="50dp"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
