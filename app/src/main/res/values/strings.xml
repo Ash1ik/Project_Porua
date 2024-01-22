@@ -54,5 +54,20 @@
     <string name="swap">Swap</string>
     <string name="my_books">My Books</string>
     <string name="recomended_books">Recomended Books</string>
+    <string name="my_account">My Account\n</string>
+    <string name="my_orders">My Orders</string>
+    <string name="all_orders">All Orders\n</string>
+    <string name="processing">Processing\n</string>
+    <string name="shipped">Shipped</string>
+    <string name="returned">Returned\n</string>
+    <string name="services">Services\n</string>
+    <string name="wishlist">Wishlist\n</string>
+    <string name="bookshelf">Bookshelf</string>
+    <string name="rate_review">Rate/Review\n</string>
+    <string name="follow">Follow</string>
+    <string name="legal_and_contact"><![CDATA[Legal&Contact]]></string>
+    <string name="privacy_n_policy"><![CDATA[Privacy&Policy]]></string>
+    <string name="contact_us">ContactUs\n</string>
+    <string name="about_us">AboutUs</string>
 
 </resources>

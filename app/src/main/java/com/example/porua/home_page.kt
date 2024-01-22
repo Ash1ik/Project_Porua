@@ -20,6 +20,7 @@ class home_page : AppCompatActivity() {
         search_icon()
         swap()
         cart()
+        menu()
     }
 
 
@@ -97,6 +98,15 @@ class home_page : AppCompatActivity() {
 
         cart.setOnClickListener {
             intent = Intent(this,Cart::class.java)
+            startActivity(intent)
+        }
+    }
+
+    fun menu(){
+        val menu = findViewById<ImageButton>(R.id.menu)
+
+        menu.setOnClickListener {
+            intent = Intent(this,MenuBar::class.java)
             startActivity(intent)
         }
     }

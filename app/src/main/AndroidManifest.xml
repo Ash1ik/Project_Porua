@@ -13,13 +13,13 @@
         android:theme="@style/Theme.Porua"
         tools:targetApi="31">
         <activity
+            android:name=".MenuBar"
+            android:exported="false" />
+        <activity
             android:name=".Cart"
             android:exported="false" />
         <activity
             android:name=".Search_bar"
-            android:exported="false" />
-        <activity
-            android:name=".MenuBar"
             android:exported="false" />
         <activity
             android:name=".Favorite_list"
