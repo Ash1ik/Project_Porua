@@ -1,234 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="20dp"
-    android:gravity="center"
-    tools:context=".Profile">
+    tools:context=".Profile"
+    tools:ignore="ExtraText">
 
-
-
-
-    <TextView
-        android:id="@+id/profile"
+    <ImageView
+        android:id="@+id/tvProfileImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:padding="10dp"
-        android:layout_marginBottom="15dp"
-        android:background="@android:color/transparent"
-        android:text="@string/my_profile"
-        android:textAppearance="@style/TextAppearance.AppCompat.Title"
-        android:textColor="@color/black" />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        >
-
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/profileImage"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_gravity="center"
-            android:background="@color/Google"
-            app:shapeAppearanceOverlay="@style/circular"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            tools:ignore="MissingConstraints" />
-
-        <Button
-            android:id="@+id/profilrImageButton"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_gravity="bottom"
-            android:background="@drawable/icon_camera"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/profileImage"
-            app:layout_constraintHorizontal_bias="0.857"
-            app:layout_constraintStart_toStartOf="@+id/profileImage"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.866"
-            tools:ignore="MissingConstraints" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.094"
+        app:srcCompat="@drawable/ashikprofile" />
 
     <TextView
-        android:id="@+id/nameText"
+        android:id="@+id/tvProfileName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/ashik_iqbal"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="15dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Title"
-        android:textColor="@android:color/black" />
+        android:layout_marginTop="28dp"
+        android:text=""
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfileImage"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:weightSum="2"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp"
-        >
-
-        <Button
-            android:id="@+id/Bookshelf"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/book_shelf"
-            android:layout_weight="1"
-            android:background="@drawable/continue_with_button"
-            android:backgroundTint="@color/Google"
-            android:layout_marginEnd="30dp"
-            />
-
-        <Button
-            android:id="@+id/Requestbook"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/request_book"
-            android:layout_weight="1"
-            android:background="@drawable/continue_with_button"
-            android:backgroundTint="@color/Google"
-            />
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:weightSum="2"
-        android:gravity="center"
-        android:orientation="horizontal"
-
-        >
-
-        <Button
-            android:id="@+id/Wishlist"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/wish_list"
-            android:layout_weight="1"
-            android:background="@drawable/continue_with_button"
-            android:backgroundTint="@color/Google"
-            android:layout_marginEnd="30dp"
-            />
-
-        <Button
-            android:id="@+id/Review"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/review_amp_rating"
-            android:layout_weight="1"
-            android:background="@drawable/continue_with_button"
-            android:backgroundTint="@color/Google"
-            />
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:weightSum="2"
-        android:gravity="center"
-        android:orientation="horizontal"
-
-        >
-
-        <Button
-            android:id="@+id/Swap"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/wish_list"
-            android:layout_weight="1"
-            android:background="@drawable/continue_with_button"
-            android:backgroundTint="@color/Google"
-            android:layout_marginEnd="30dp"
-            />
-
-        <Button
-            android:id="@+id/SwapHisyory"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/review_amp_rating"
-            android:layout_weight="1"
-            android:background="@drawable/continue_with_button"
-            android:backgroundTint="@color/Google"
-            />
-
-    </LinearLayout>
+    <TextView
+        android:id="@+id/tvProfileEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfileName"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/btnLogout"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/continue_with_button"
-        android:backgroundTint="@color/Email"
-        android:textColor="@color/white"
-        android:text="@string/logout" />
-
-
-    <LinearLayout
+        android:id="@+id/btnProfileSingout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center"
-        android:layout_marginTop="115dp"
-        >
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="@drawable/icon_home"
-            />
-        <ImageButton
-            android:id="@+id/favorite"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="33dp"
-            android:layout_gravity="center"
-            android:background="@drawable/icon_favorite"
-            />
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginStart="33dp"
-            android:background="@drawable/ic_swap"
-            />
+        android:text="Sing out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfileEmail"
+        app:layout_constraintVertical_bias="0.641" />
 
-        <ImageButton
-            android:id="@+id/Profile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginStart="33dp"
-            android:background="@drawable/icon_user"
-            />
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginStart="33dp"
-            android:background="@drawable/icon_menu"
-            />
-
-    </LinearLayout>
-
-</LinearLayout>
-
+</androidx.constraintlayout.widget.ConstraintLayout>

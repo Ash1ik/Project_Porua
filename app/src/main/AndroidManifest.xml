@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Porua"
         tools:targetApi="31">
         <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
             android:name=".ResetPassword"
             android:exported="false" />
         <activity
@@ -41,9 +44,6 @@
             android:exported="false" />
         <activity
             android:name=".Science_Fiction"
-            android:exported="false" />
-        <activity
-            android:name=".Profile"
             android:exported="false" />
         <activity
             android:name=".swap_page"
