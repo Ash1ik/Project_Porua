@@ -171,7 +171,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/signOutButton"
+        android:id="@+id/btnLogout"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
@@ -179,7 +179,7 @@
         android:background="@drawable/continue_with_button"
         android:backgroundTint="@color/Email"
         android:textColor="@color/white"
-        android:text="@string/sign_out" />
+        android:text="@string/logout" />
 
 
     <LinearLayout

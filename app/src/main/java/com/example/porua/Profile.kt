@@ -5,11 +5,14 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class Profile : AppCompatActivity() {
 
     private lateinit var button: Button
     private lateinit var imageView: ImageView
+    private lateinit var logout : Button
 
     companion object {
         val IMAGE_REQUEST_CODE = 100
@@ -21,6 +24,9 @@ class Profile : AppCompatActivity() {
 
         button = findViewById(R.id.profilrImageButton)
         imageView = findViewById(R.id.profileImage)
+        logout = findViewById(R.id.btnLogout)
+
+        logout()
 
         button.setOnClickListener {
             pickImageGallery()
@@ -38,5 +44,17 @@ class Profile : AppCompatActivity() {
         if (requestCode == IMAGE_REQUEST_CODE && resultCode == RESULT_OK) { // Fix here
             imageView.setImageURI(data?.data)
         }
+    }
+
+    private fun logout(){
+
+        logout.setOnClickListener {
+            Firebase.auth.signOut()
+
+            val intent = Intent(this,startPage::class.java)
+            startActivity(intent)
+        }
+
+
     }
 }

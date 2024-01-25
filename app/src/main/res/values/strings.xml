@@ -69,5 +69,9 @@
     <string name="privacy_n_policy"><![CDATA[Privacy&Policy]]></string>
     <string name="contact_us">ContactUs\n</string>
     <string name="about_us">AboutUs</string>
+    <string name="logout">Logout</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="reset">Reset</string>
+    <string name="enter_email_address">Enter email address</string>
 
 </resources>
