@@ -1,54 +1,49 @@
 package com.example.porua
 
 import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.ImageView
-import androidx.appcompat.app.AppCompatActivity
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.ktx.Firebase
+import android.widget.TextView
+import android.widget.Toast
+import com.google.firebase.Firebase
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.auth
+import com.google.firebase.firestore.firestore
 
 class Profile : AppCompatActivity() {
+    private lateinit var tvName: TextView
+    private lateinit var tvEmail: TextView
+    private lateinit var Singout:Button
 
-    private lateinit var button: Button
-    private lateinit var imageView: ImageView
-    private lateinit var logout : Button
-
-    companion object {
-        val IMAGE_REQUEST_CODE = 100
-    }
-
+    private var db = Firebase.firestore
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_profile) // Replace with your layout file
+        setContentView(R.layout.activity_profile)
 
-        button = findViewById(R.id.profilrImageButton)
-        imageView = findViewById(R.id.profileImage)
-        logout = findViewById(R.id.btnLogout)
 
-        logout()
+        Singout=findViewById(R.id.btnProfileSingout)
 
-        button.setOnClickListener {
-            pickImageGallery()
+        tvName = findViewById(R.id.tvProfileName)
+        tvEmail = findViewById(R.id.tvProfileEmail)
+
+        val userId = FirebaseAuth.getInstance().currentUser!!.uid
+        val ref = db.collection("user").document(userId)
+
+        ref.get().addOnSuccessListener {
+            if(it!=null){
+                val name = it.data?.get("name")?.toString()
+                val email = it.data?.get("email")?.toString()
+
+                tvName.text = name
+                tvEmail.text = email
+            }
         }
-    }
+            .addOnFailureListener{
+                Toast.makeText(this,"Failed", Toast.LENGTH_SHORT).show()
+            }
 
-    private fun pickImageGallery() {
-        val intent = Intent(Intent.ACTION_PICK)
-        intent.type = "image/*"
-        startActivityForResult(intent, IMAGE_REQUEST_CODE)
-    }
-
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        if (requestCode == IMAGE_REQUEST_CODE && resultCode == RESULT_OK) { // Fix here
-            imageView.setImageURI(data?.data)
-        }
-    }
-
-    private fun logout(){
-
-        logout.setOnClickListener {
+        Singout.setOnClickListener {
             Firebase.auth.signOut()
 
             val intent = Intent(this,startPage::class.java)
