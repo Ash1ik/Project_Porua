@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,158 +9,114 @@
     android:orientation="vertical">
 
 
-
     <EditText
         android:layout_width="318dp"
         android:layout_height="48dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/continue_with_button"
-        android:hint="@string/what_are_you_looking_for"
-        android:gravity="center"
-        android:layout_marginTop="10dp"
         android:backgroundTint="@color/Google"
         android:drawableEnd="@drawable/ic_search"
+        android:gravity="center"
+        android:hint="@string/what_are_you_looking_for"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16"
         tools:ignore="RtlSymmetry" />
 
     <LinearLayout
+        android:id="@+id/linearLayout7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_marginBottom="388dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:weightSum="2"
-            android:gravity="center"
             android:layout_marginTop="10dp"
+            android:gravity="center"
             android:orientation="horizontal"
-            android:padding="10dp">
+            android:padding="10dp"
+            android:weightSum="2">
 
             <Button
                 android:id="@+id/science_fiction"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:background="@drawable/continue_with_button"
-                android:text="@string/science_fiction"
                 android:layout_weight="1"
+                android:background="@drawable/continue_with_button"
                 android:backgroundTint="@color/Google"
-                />
+                android:text="@string/science_fiction" />
+
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:background="@drawable/continue_with_button"
-                android:text="@string/history"
-                android:layout_weight="1"
                 android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/continue_with_button"
                 android:backgroundTint="@color/Google"
-                />
+                android:text="@string/poetry" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:weightSum="2"
+            android:layout_marginTop="10dp"
             android:gravity="center"
-            android:layout_marginTop="10dp"
             android:orientation="horizontal"
-            android:padding="10dp">
+            android:padding="10dp"
+            android:weightSum="2">
 
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:background="@drawable/continue_with_button"
-                android:text="@string/comics"
                 android:layout_weight="1"
+                android:background="@drawable/continue_with_button"
                 android:backgroundTint="@color/Google"
-                />
+                android:text="@string/comics" />
+
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:background="@drawable/continue_with_button"
-                android:text="@string/science_fiction"
-                android:layout_weight="1"
                 android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/continue_with_button"
                 android:backgroundTint="@color/Google"
-                />
+                android:text="@string/novel" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:weightSum="2"
+            android:layout_marginTop="10dp"
             android:gravity="center"
-            android:layout_marginTop="10dp"
             android:orientation="horizontal"
-            android:padding="10dp">
+            android:padding="10dp"
+            android:weightSum="2">
 
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:background="@drawable/continue_with_button"
-                android:text="@string/science_fiction"
                 android:layout_weight="1"
-                android:backgroundTint="@color/Google"
-                />
-            <Button
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
                 android:background="@drawable/continue_with_button"
-                android:text="@string/science_fiction"
-                android:layout_weight="1"
-                android:layout_marginStart="10dp"
                 android:backgroundTint="@color/Google"
-                />
+                android:text="@string/thriller" />
+
 
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:weightSum="2"
-            android:gravity="center"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal"
-            android:padding="10dp">
 
-            <Button
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/continue_with_button"
-                android:text="@string/science_fiction"
-                android:layout_weight="1"
-                android:backgroundTint="@color/Google"
-                />
-            <Button
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/continue_with_button"
-                android:text="@string/science_fiction"
-                android:layout_weight="1"
-                android:layout_marginStart="10dp"
-                android:backgroundTint="@color/Google"
-                />
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:weightSum="2"
-
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal"
-            android:padding="10dp">
-
-            <Button
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/continue_with_button"
-                android:text="@string/science_fiction"
-                android:layout_weight="1"
-                android:backgroundTint="@color/Google"
-                />
-
-        </LinearLayout>
     </LinearLayout>
 
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

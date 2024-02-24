@@ -1,4 +1,5 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,37 +11,51 @@
         android:id="@+id/cart_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:text="My Cart"
         android:textColor="@color/black"
         android:textSize="24sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <View
+        android:id="@+id/view4"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/cardview_dark_background"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginTop="32dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        tools:ignore="MissingConstraints" />
 
     <LinearLayout
+        android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
         android:orientation="horizontal"
-        android:weightSum="2">
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3">
 
         <ImageView
             android:id="@+id/cart_item_image"
-            android:background="@drawable/a_million_to_one"
             android:layout_width="80dp"
             android:layout_height="160dp"
+            android:background="@drawable/a_million_to_one"
             android:scaleType="centerCrop" />
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:layout_weight="1"
-            android:orientation="vertical"
-            android:layout_marginStart="16dp">
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/cart_item_title"
@@ -55,18 +70,18 @@
                 android:id="@+id/cart_item_author"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
                 android:text="Tony Faggioli"
-                android:textSize="18sp"
-                android:layout_marginTop="4dp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/cart_item_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
+                android:layout_marginTop="8dp"
                 android:text="$12.99"
-                android:textSize="14sp"
-                android:layout_marginTop="8dp" />
+                android:textColor="@color/black"
+                android:textSize="14sp" />
 
         </LinearLayout>
 
@@ -74,48 +89,62 @@
             android:id="@+id/cart_remove_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Remove"
-            android:textSize="14sp"
-            android:layout_marginEnd="16dp"
+            android:layout_gravity="center_vertical"
             android:background="@color/cardview_dark_background"
+            android:text="Remove"
             android:textColor="@color/white"
-            android:layout_gravity="center_vertical" />
+            android:textSize="14sp" />
+
 
     </LinearLayout>
 
     <View
+        android:id="@+id/view3"
         android:layout_width="match_parent"
         android:layout_height="1dp"
+        android:layout_marginTop="20dp"
         android:background="@color/black"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cart_title" />
 
     <LinearLayout
+        android:id="@+id/linearLayout4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:orientation="horizontal"
-        android:weightSum="2">
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
             android:layout_weight="1"
             android:gravity="right"
             android:text="Subtotal: $12.99"
             android:textColor="@color/black"
-            android:textSize="18sp"
-            android:layout_marginEnd="16dp" />
-
-        <Button
-            android:id="@+id/cart_checkout_button"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Checkout"
-            android:textSize="18sp"
-            android:background="@color/cat_button_stroke"
-            android:textColor="@color/white" />
+            android:textSize="18sp" />
 
     </LinearLayout>
 
-</LinearLayout>
+    <Button
+        android:id="@+id/cart_checkout_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_weight="1"
+        android:background="@color/cat_button_stroke"
+        android:text="Checkout"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

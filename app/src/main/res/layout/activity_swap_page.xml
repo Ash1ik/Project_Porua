@@ -1,290 +1,241 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".swap_page"
-    android:orientation="vertical"
+    tools:context=".swap_page">
 
-    >
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/continue_with_button"
+        android:backgroundTint="@color/cat_button_stroke"
         android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="10dp"
-        android:layout_marginTop="10dp"
-        >
+        android:text="@string/my_books"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="125dp"
-            android:background="@color/Google" />
 
-        <ImageView
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button6">
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:background="@drawable/ic_swap"
+            android:layout_marginTop="17dp"
+            android:orientation="horizontal">
 
-            />
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="125dp"
+                android:layout_marginStart="23dp"
+                android:background="@drawable/my_book_01"
 
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="125dp"
-            android:layout_marginStart="10dp"
-            android:background="@drawable/thriller_01" />
-        
+                />
 
-    </LinearLayout>
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="125dp"
+                android:layout_marginStart="23dp"
+                android:background="@drawable/my_book_02" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="125dp"
+                android:layout_marginStart="23dp"
+                android:background="@drawable/my_book_03" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="125dp"
+                android:layout_marginStart="23dp"
+                android:background="@drawable/novel_01" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="125dp"
+                android:layout_marginStart="23dp"
+                android:background="@drawable/thriller_01" />
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/continue_with_button"
+        android:backgroundTint="@color/cat_button_stroke"
+        android:gravity="center"
+        android:text="@string/recomended_books"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+    <HorizontalScrollView
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button7">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="125dp"
+                android:layout_marginStart="23dp"
+                android:background="@drawable/recomend_01"
+
+                />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="125dp"
+                android:layout_marginStart="23dp"
+                android:background="@drawable/recomend_02" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="125dp"
+                android:layout_marginStart="23dp"
+                android:background="@drawable/recomend_03" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="125dp"
+                android:layout_marginStart="23dp"
+                android:background="@drawable/poetry_01" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="125dp"
+                android:layout_marginStart="23dp"
+                android:background="@drawable/poetry_02" />
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/icon_home" />
+
+        <ImageButton
+            android:id="@+id/favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="33dp"
+            android:background="@drawable/icon_favorite" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="33dp"
+            android:background="@drawable/ic_swap" />
+
+        <ImageButton
+            android:id="@+id/Profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="33dp"
+            android:background="@drawable/icon_user" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="33dp"
+            android:background="@drawable/icon_menu" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/continue_with_button"
+        android:backgroundTint="@color/cat_button_stroke"
         android:gravity="center"
         android:padding="5dp"
-        android:layout_marginTop="10dp">
-        
-        <Button
-            android:layout_width="110dp"
-            android:layout_height="35dp"
-            android:background="@drawable/continue_with_button"
-            android:backgroundTint="@color/cat_button_stroke"
-            android:text="@string/swap"
-            android:textColor="@color/white"
-            android:padding="5dp"
-            android:gravity="center"
-            />
+        android:text="@string/swap"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
-    </LinearLayout>
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="80dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/Google"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ScrollView
+    <ImageView
+        android:id="@+id/imageView3"
         android:layout_width="wrap_content"
-        android:layout_height="490dp">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                >
-
-                <Button
-                    android:layout_width="110dp"
-                    android:layout_height="35dp"
-                    android:background="@drawable/continue_with_button"
-                    android:backgroundTint="@color/cat_button_stroke"
-                    android:text="@string/my_books"
-                    android:textColor="@color/white"
-                    android:gravity="center"
-                    android:layout_marginStart="23dp"
-                    />
-
-            </LinearLayout>
-
-            <HorizontalScrollView
-                android:layout_width="400dp"
-                android:layout_height="wrap_content">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="17dp"
-                    android:orientation="horizontal"
-                    >
-
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="125dp"
-                        android:background="@drawable/my_book_01"
-                        android:layout_marginStart="23dp"
-
-                        />
-
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="125dp"
-                        android:background="@drawable/my_book_02"
-                        android:layout_marginStart="23dp"
-                        />
-
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="125dp"
-                        android:background="@drawable/my_book_03"
-                        android:layout_marginStart="23dp"
-                        />
-
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="125dp"
-                        android:background="@drawable/novel_01"
-                        android:layout_marginStart="23dp"
-                        />
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="125dp"
-                        android:background="@drawable/thriller_01"
-                        android:layout_marginStart="23dp"
-                        />
-
-
-                </LinearLayout>
-
-            </HorizontalScrollView>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                >
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="35dp"
-                    android:background="@drawable/continue_with_button"
-                    android:backgroundTint="@color/cat_button_stroke"
-                    android:text="@string/recomended_books"
-                    android:textColor="@color/white"
-                    android:gravity="center"
-                    android:layout_marginStart="23dp"
-                    />
-
-            </LinearLayout>
-
-
-            <HorizontalScrollView
-                android:layout_width="400dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                >
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="17dp"
-                    android:orientation="horizontal"
-                    >
-
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="125dp"
-                        android:background="@drawable/recomend_01"
-                        android:layout_marginStart="23dp"
-
-                        />
-
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="125dp"
-                        android:background="@drawable/recomend_02"
-                        android:layout_marginStart="23dp"
-                        />
-
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="125dp"
-                        android:background="@drawable/recomend_03"
-                        android:layout_marginStart="23dp"
-                        />
-
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="125dp"
-                        android:layout_marginStart="23dp"
-                        android:background="@drawable/poetry_01" />
-
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="125dp"
-                        android:layout_marginStart="23dp"
-                        android:background="@drawable/poetry_02" />
-
-
-                </LinearLayout>
-
-            </HorizontalScrollView>
-
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/hot_deals_button"
-                android:layout_marginTop="20dp"
-                android:layout_gravity="center"
-                android:src="@drawable/hot_deal"
-                />
-
-
-        </LinearLayout>
-
-
-    </ScrollView>
-
-
-
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginTop="10dp"
-        >
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            >
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:background="@drawable/icon_home"
-                />
-            <ImageButton
-                android:id="@+id/favorite"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="33dp"
-                android:layout_gravity="center"
-                android:background="@drawable/icon_favorite"
-                />
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="33dp"
-                android:background="@drawable/ic_swap"
-                />
+        android:layout_marginTop="64dp"
+        android:background="@drawable/ic_swap"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageButton
-                android:id="@+id/Profile"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="33dp"
-                android:background="@drawable/icon_user"
-                />
-
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="33dp"
-                android:background="@drawable/icon_menu"
-                />
-        </LinearLayout>
-
-    </LinearLayout>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="68dp"
+        android:background="@drawable/thriller_01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

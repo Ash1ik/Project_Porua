@@ -1,19 +1,21 @@
 package com.example.porua
 
+import android.content.ContentValues.TAG
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import com.example.porua.databinding.ActivityLoginPageBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
 class Login_page : AppCompatActivity() {
+
 
     private lateinit var btnLogin : Button
     private lateinit var etEmail: EditText
@@ -23,9 +25,14 @@ class Login_page : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
 
+
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login_page)
+
 
         auth = Firebase.auth
 
@@ -36,6 +43,9 @@ class Login_page : AppCompatActivity() {
         sign_up()
         log_in()
         resetPass()
+
+
+        
     }
     private fun sign_up(){
         val sign_up = findViewById<TextView>(R.id.sign_up)
@@ -46,6 +56,8 @@ class Login_page : AppCompatActivity() {
         }
     }
 
+
+
     private fun log_in(){
 
         btnLogin.setOnClickListener {
@@ -53,31 +65,40 @@ class Login_page : AppCompatActivity() {
             val sEmail = etEmail.text.toString().trim()
             val sPassword = etPassword.text.toString().trim()
 
-            auth.signInWithEmailAndPassword(sEmail, sPassword)
-                .addOnCompleteListener(this) { task ->
-                    if (task.isSuccessful) {
-                        // Sign in success, update UI with the signed-in user's information
+            if(sEmail.isEmpty() && sPassword.isEmpty()){
 
-                        val verification = auth.currentUser?.isEmailVerified
+                Toast.makeText(this,"The field is empty",Toast.LENGTH_SHORT).show()
 
-                        if(verification == true){
-                            val user = auth.currentUser
-                            updateUI()
+            }
+            else{
+
+                auth.signInWithEmailAndPassword(sEmail, sPassword)
+                    .addOnCompleteListener(this) { task ->
+                        if (task.isSuccessful) {
+                            // Sign in success, update UI with the signed-in user's information
+
+                            val verification = auth.currentUser?.isEmailVerified
+
+                            if(verification == true){
+                                val user = auth.currentUser
+                                updateUI()
+                            }
+                            else{
+                                Toast.makeText(this,"Please verify your Email",Toast.LENGTH_SHORT).show()
+                            }
+
+                        } else {
+                            // If sign in fails, display a message to the user.
+                            Toast.makeText(
+                                baseContext,
+                                "Authentication failed.",
+                                Toast.LENGTH_SHORT,
+                            ).show()
+                            //updateUI(null)
                         }
-                        else{
-                            Toast.makeText(this,"Please verify your Email",Toast.LENGTH_SHORT).show()
-                        }
-
-                    } else {
-                        // If sign in fails, display a message to the user.
-                        Toast.makeText(
-                            baseContext,
-                            "Authentication failed.",
-                            Toast.LENGTH_SHORT,
-                        ).show()
-                        //updateUI(null)
                     }
-                }
+
+            }
 
         }
 

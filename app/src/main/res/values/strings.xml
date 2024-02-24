@@ -73,5 +73,6 @@
     <string name="reset_password">Reset Password</string>
     <string name="reset">Reset</string>
     <string name="enter_email_address">Enter email address</string>
+    <string name="name">Name</string>
 
 </resources>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".startActivity"
     android:background="@color/white"
-    tools:ignore="ExtraText"
-    android:padding="10dp">
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".startActivity"
+    tools:ignore="ExtraText">
 
 
     <ImageView
@@ -17,117 +17,122 @@
         android:layout_height="200dp"
         android:layout_gravity="center"
         android:layout_margin="10dp"
+        android:layout_marginTop="4dp"
         android:backgroundTint="@color/white"
+        android:contentDescription="@string/logo"
         android:padding="1dp"
         android:scaleType="centerCrop"
         android:src="@drawable/porua"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:strokeColor="@android:color/darker_gray"
-        app:strokeWidth="5dp"
-        android:contentDescription="@string/logo" />
+        app:strokeWidth="5dp" />
 
     <Button
         android:id="@+id/Email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="45dp"
-        android:layout_marginRight="45dp"
-        android:text="@string/continue_with_email"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/continue_with_button"
         android:backgroundTint="@color/Email"
-        android:textSize="18sp"
+        android:text="@string/continue_with_email"
         android:textColor="@color/white"
-        />
-
-
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/Facebook"
+        app:layout_constraintEnd_toEndOf="@+id/ImgPorua"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="@+id/ImgPorua"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.992" />
 
     <Button
         android:id="@+id/Facebook"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="45dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="45dp"
-        android:backgroundTint="@color/Fb"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/continue_with_button"
+        android:backgroundTint="@color/Fb"
         android:drawableStart="@drawable/ic_facebook"
-        android:text="@string/continue_with_facebook"
         android:paddingStart="10dp"
-        android:textSize="18sp"
+        android:text="@string/continue_with_facebook"
         android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/Google"
+        app:layout_constraintEnd_toEndOf="@+id/Email"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Email"
         tools:ignore="RtlSymmetry" />
-
-
 
     <Button
         android:id="@+id/Google"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="45dp"
-        android:layout_marginRight="45dp"
-        android:backgroundTint="@color/Google"
+        android:layout_marginTop="360dp"
         android:background="@drawable/continue_with_button"
+        android:backgroundTint="@color/Google"
         android:drawableStart="@drawable/ic_google"
         android:paddingStart="10dp"
         android:text="@string/continue_with_gmail"
         android:textColor="@color/black"
         android:textSize="18sp"
-
-        tools:ignore="RtlSymmetry" />
-
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_gravity="center"
-            android:gravity="right"
-            android:text="@string/already_a_member"
-            android:textColor="@color/black"
-            tools:ignore="RtlHardcoded" />
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="7dp"
-            android:layout_weight="1"
-            android:textColor="#0F6AC8"
-            android:text="  log in" />
-
-    </LinearLayout>
+        app:layout_constraintEnd_toEndOf="@+id/Facebook"
+        app:layout_constraintStart_toStartOf="@+id/Facebook"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,RtlSymmetry" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:layout_marginRight="25dp"
         android:gravity="center"
-        android:layout_marginLeft="25dp"
         android:text="@string/By_Continuing"
         android:textColor="@color/black"
-        />
+        app:layout_constraintBottom_toTopOf="@+id/Browse"
+        app:layout_constraintEnd_toEndOf="@+id/Browse"
+        app:layout_constraintStart_toStartOf="@+id/Browse" />
 
     <Button
         android:id="@+id/Browse"
-        android:layout_width="match_parent"
+        android:layout_width="409dp"
         android:layout_height="80dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@color/Browse"
         android:text="@string/browse_without_log_in"
-        android:textSize="20sp"
         android:textColor="@color/black"
-        android:backgroundTint="@color/Browse"/>
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="104dp"
+        android:layout_weight="1"
+        android:text="  log in"
+        android:textColor="#0F6AC8"
+        app:layout_constraintEnd_toEndOf="@+id/Google"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/Google" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="24dp"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="@string/already_a_member"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/Google"
+        app:layout_constraintTop_toBottomOf="@+id/Google"
+        tools:ignore="RtlHardcoded" />
 
 
-
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
