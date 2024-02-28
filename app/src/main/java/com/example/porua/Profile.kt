@@ -44,6 +44,9 @@ class Profile : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
 
+
+        bookShelf()
+
         storageReference = FirebaseStorage.getInstance()
 
         imageView = findViewById(R.id.tvProfileImage)
@@ -127,6 +130,20 @@ class Profile : AppCompatActivity() {
             startActivity(intent)
         }
 
+
+    }
+
+
+    fun bookShelf(){
+
+        val bookshelf = findViewById<ImageButton>(R.id.bookshelf)
+
+        bookshelf.setOnClickListener {
+
+            intent = Intent(this,uploadbooks::class.java)
+            startActivity(intent)
+
+        }
 
     }
 
