@@ -123,7 +123,7 @@
                         android:textColor="@color/black" />
 
                     <EditText
-                        android:id="@+id/publisher"
+                        android:id="@+id/tvUpFeedback"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=""
@@ -220,7 +220,7 @@
     </ScrollView>
 
     <Button
-        android:id="@+id/swap_button"
+        android:id="@+id/btnSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
