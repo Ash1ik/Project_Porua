@@ -81,7 +81,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         tools:ignore="RtlSymmetry" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/Input_pass"
         android:layout_width="334dp"
         android:layout_height="45dp"
