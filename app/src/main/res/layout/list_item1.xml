@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="8dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/BookName"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="Book Name" />
+
+        <TextView
+            android:id="@+id/WriterName"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Writer Name" />
+        <TextView
+            android:id="@+id/Description"
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="description" />
+        <TextView
+            android:id="@+id/Feedback"
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="feedback" />
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

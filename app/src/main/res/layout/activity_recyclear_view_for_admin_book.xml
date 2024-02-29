@@ -7,7 +7,7 @@
     tools:context=".RecyclearViewActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycleview"
+        android:id="@+id/recycleviewadmin"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -16,6 +16,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        tools:listitem="@layout/list_item1" />
+        tools:listitem="@layout/list_item_admin" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

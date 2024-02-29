@@ -1,47 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:layout_margin="10dp"
-    app:cardCornerRadius="8dp"
-    android:layout_height="wrap_content">
+    android:backgroundTint="@color/white"
+    app:cardCornerRadius="8dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="10dp">
 
         <TextView
-            android:id="@+id/BookName"
-            android:layout_marginTop="20sp"
-            android:layout_marginLeft="10sp"
+            android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:text="Book Name" />
+            android:fontFamily="@font/aclonica"
+            android:text="Name"
+            android:textColor="@color/teal_700"
+            android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/WriterName"
-            android:layout_marginLeft="10sp"
-            android:layout_marginTop="10sp"
+            android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Writer Name" />
-        <TextView
-            android:id="@+id/Description"
-            android:layout_marginTop="10sp"
-            android:layout_marginLeft="10sp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="description" />
-        <TextView
-            android:id="@+id/Feedback"
-            android:layout_marginTop="10sp"
-            android:layout_marginLeft="10sp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="feedback" />
+            android:text="Email"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
 
-
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>

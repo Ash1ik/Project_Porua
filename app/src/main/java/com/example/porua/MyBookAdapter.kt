@@ -17,7 +17,7 @@ class MyBookAdapter(private val currentUserId: String, private val booklist: Arr
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val itemView =
-            LayoutInflater.from(parent.context).inflate(R.layout.list_item, parent, false)
+            LayoutInflater.from(parent.context).inflate(R.layout.list_item1, parent, false)
         return MyViewHolder(itemView)
     }
 
