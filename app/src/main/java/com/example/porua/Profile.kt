@@ -1,5 +1,6 @@
 package com.example.porua
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.Camera
 import android.net.Uri
@@ -28,6 +29,8 @@ class Profile : AppCompatActivity() {
     private lateinit var btnCamera: ImageButton
     private lateinit var btnUpload: Button
     private lateinit var imgview : ImageView
+    private lateinit var addBook:ImageButton
+    private lateinit var UploadBook:Button
 
     private lateinit var tvName: TextView
     private lateinit var tvEmail: TextView
@@ -40,12 +43,13 @@ class Profile : AppCompatActivity() {
 
     private lateinit var uri : Uri
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
 
 
-        bookShelf()
+
 
         storageReference = FirebaseStorage.getInstance()
 
@@ -56,6 +60,8 @@ class Profile : AppCompatActivity() {
         Singout=findViewById(R.id.btnProfileSingout)
         tvName = findViewById(R.id.tvProfileName)
         tvEmail = findViewById(R.id.tvProfileEmail)
+        addBook = findViewById(R.id.bookshelf)
+        UploadBook = findViewById(R.id.UpBook)
 
 
         val galleryImage = registerForActivityResult(
@@ -129,23 +135,19 @@ class Profile : AppCompatActivity() {
             val intent = Intent(this,Login_page::class.java)
             startActivity(intent)
         }
-
-
-    }
-
-
-    fun bookShelf(){
-
-        val bookshelf = findViewById<ImageButton>(R.id.bookshelf)
-
-        bookshelf.setOnClickListener {
-
-            intent = Intent(this,uploadbooks::class.java)
+        addBook.setOnClickListener {
+            val intent = Intent(this, RecyclearViewActivity::class.java)
             startActivity(intent)
+        }
+        UploadBook.setOnClickListener {
 
         }
 
+
     }
+
+
+
 
 
 }

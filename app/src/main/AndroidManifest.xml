@@ -17,6 +17,12 @@
             android:name=".FetchBook"
             android:exported="false" />
         <activity
+            android:name=".RecyclearViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SaveBookActivity"
+            android:exported="false" />
+        <activity
             android:name=".uploadbooks"
             android:exported="false" />
         <activity
