@@ -24,12 +24,14 @@
         android:id="@+id/UpBook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
         android:text="UploadBook"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/btnUpload"
-        app:layout_constraintStart_toStartOf="@+id/btnUpload"
-        app:layout_constraintTop_toBottomOf="@+id/btnUpload" />
+        app:layout_constraintBottom_toTopOf="@+id/btnProfileSingout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfileEmail"
+        app:layout_constraintVertical_bias="0.331" />
 
     <TextView
         android:id="@+id/tvProfileName"
@@ -40,9 +42,10 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/tvProfileImage"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/tvProfileImage"
         app:layout_constraintTop_toBottomOf="@+id/tvProfileImage"
-        app:layout_constraintVertical_bias="0.106" />
+        app:layout_constraintVertical_bias="0.069" />
 
     <TextView
         android:id="@+id/tvProfileEmail"
@@ -61,33 +64,35 @@
         android:id="@+id/btnProfileSingout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="@color/Email"
         android:text="Sign out"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvProfileEmail"
-        app:layout_constraintVertical_bias="0.509" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnUpload"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
         android:text="Upload"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btnProfileSingout"
-        app:layout_constraintHorizontal_bias="0.424"
-        app:layout_constraintStart_toStartOf="@+id/btnProfileSingout"
+        app:layout_constraintBottom_toTopOf="@+id/btnProfileSingout"
+        app:layout_constraintStart_toEndOf="@+id/bookshelf"
         app:layout_constraintTop_toBottomOf="@+id/tvProfileEmail"
-        app:layout_constraintVertical_bias="0.742" />
+        app:layout_constraintVertical_bias="0.429" />
 
     <ImageButton
         android:id="@+id/bookshelf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
         android:src="@drawable/icon_bookshelf"
-        app:layout_constraintBottom_toTopOf="@+id/btnProfileSingout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvProfileEmail" />
 
@@ -96,11 +101,58 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="116dp"
-        android:src="@android:drawable/ic_menu_camera"
+        android:src="@drawable/icon_camera"
         app:layout_constraintEnd_toEndOf="@+id/tvProfileImage"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/tvProfileImage"
         app:layout_constraintTop_toTopOf="@+id/tvProfileImage" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/icon_home" />
+
+        <ImageButton
+            android:id="@+id/favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="33dp"
+            android:background="@drawable/icon_favorite" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="33dp"
+            android:background="@drawable/ic_swap" />
+
+        <ImageButton
+            android:id="@+id/Profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="33dp"
+            android:background="@drawable/icon_user" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="33dp"
+            android:background="@drawable/icon_menu" />
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

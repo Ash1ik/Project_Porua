@@ -221,6 +221,24 @@
 
     </ScrollView>
 
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="36dp"
+        android:enabled="false"
+        android:backgroundTint="@color/green"
+        android:gravity="center"
+        android:text=" SWAP "
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
 
     <LinearLayout
         android:id="@+id/linearLayout10"
