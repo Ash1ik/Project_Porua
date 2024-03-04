@@ -11,10 +11,11 @@
         android:id="@+id/horizontalScrollView"
         android:layout_width="400dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="247dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnSwap"
         tools:ignore="MissingConstraints">
 
         <LinearLayout
@@ -76,9 +77,11 @@
         app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
 
     <HorizontalScrollView
+        android:id="@+id/horizontalScrollView4"
         android:layout_width="400dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
@@ -128,6 +131,7 @@
     </HorizontalScrollView>
 
     <LinearLayout
+        android:id="@+id/linearLayout12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
