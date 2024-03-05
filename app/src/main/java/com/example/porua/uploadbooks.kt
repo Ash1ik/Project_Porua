@@ -11,7 +11,4 @@ class uploadbooks : AppCompatActivity() {
         setContentView(R.layout.activity_uploadbooks)
 
     }
-
-
-
 }

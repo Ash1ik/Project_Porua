@@ -73,11 +73,9 @@ class Profile : AppCompatActivity() {
                 }
             }
         )
-
         btnCamera.setOnClickListener {
             galleryImage.launch("image/*")
         }
-
         btnUpload.setOnClickListener {
             storageReference.getReference("Images").child(System.currentTimeMillis().toString())
                 .putFile(uri)
@@ -140,14 +138,8 @@ class Profile : AppCompatActivity() {
             startActivity(intent)
         }
         UploadBook.setOnClickListener {
-
+            val intent = Intent(this, SaveBookActivity::class.java)
+            startActivity(intent)
         }
-
-
     }
-
-
-
-
-
 }
